@@ -1,0 +1,54 @@
+// Breakpoints
+$larger-than-mobile    : "min-width: 400px" !default;
+$larger-than-phablet   : "min-width: 550px" !default;
+$larger-than-tablet    : "min-width: 750px" !default;
+$larger-than-desktop   : "min-width: 1100px" !default;
+$larger-than-desktophd : "min-width: 1440px" !default;
+
+// Colors
+$white-gray: #f1f1f1 !default;
+$light-gray: #D8D8D8 !default;
+$gray: #676767 !default;
+$medium-gray: #4B4B4B !default;
+$dark-gray: #262626 !default;
+$black: #1E1E1E !default;
+
+$primary-color: #57c7c2 !default;
+$secondary-color: #57c7c2 !default;
+
+$border-color: $medium-gray !default;
+$link-color: $primary-color !default;
+$text-color: $black !default;
+$text-color-light: $medium-gray !default;
+
+$success-color: #008630 !default;
+$warning-color: #f5a623 !default;
+$alert-color: #d0021b !default;
+
+$red: #d0021b !default;
+
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700|Source+Serif+Pro');
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: "Source Serif Pro", Georgia, serif !default;
+$base-font-weight: $regular;
+$base-font-size: rem-calc(16px);
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$header-font-weight: $bold;
+
+// Misc
+$global-radius: 5px !default;
