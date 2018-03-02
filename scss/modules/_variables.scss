@@ -1,54 +1,73 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
 // Breakpoints
-$larger-than-mobile    : "min-width: 400px" !default;
-$larger-than-phablet   : "min-width: 550px" !default;
-$larger-than-tablet    : "min-width: 750px" !default;
-$larger-than-desktop   : "min-width: 1100px" !default;
-$larger-than-desktophd : "min-width: 1440px" !default;
+$larger-than-mobile			: "min-width: 400px" !default;
+$larger-than-phablet		: "min-width: 550px" !default;
+$larger-than-tablet			: "min-width: 750px" !default;
+$larger-than-desktop		: "min-width: 1000px" !default;
+$larger-than-desktophd	: "min-width: 1200px" !default;
 
-// Colors
-$white-gray: #f1f1f1 !default;
-$light-gray: #D8D8D8 !default;
-$gray: #676767 !default;
-$medium-gray: #4B4B4B !default;
-$dark-gray: #262626 !default;
-$black: #1E1E1E !default;
+// THEME COLOR VARIABLES
+$white:			#fff !default;
+$gray-100:	#F8F8F8 !default;
+$gray-200:	#F1F1F1 !default;
+$gray-300:	#E2E2E2 !default;
+$gray-400:	#C7C7C7 !default;
+$gray-500:	#B3B3B3 !default;
+$gray-600:	#979797 !default;
+$gray-700:	#757575 !default;
+$gray-800:	#5E5E5E !default;
+$gray-900:	#3F3F3F !default;
+$black:			#2d2d2d !default;
 
-$primary-color: #57c7c2 !default;
-$secondary-color: #57c7c2 !default;
+$brand-primary: #54AB67 !default;
+$brand-primary-dark: #28502F !default;
+$brand-secondary: #27512f !default;
 
-$border-color: $medium-gray !default;
-$link-color: $primary-color !default;
-$text-color: $black !default;
-$text-color-light: $medium-gray !default;
+$success: #63c684 !default;
+$warning: #f3a533 !default;
+$danger: #f35a4e !default;
 
-$success-color: #008630 !default;
-$warning-color: #f5a623 !default;
-$alert-color: #d0021b !default;
-
-$red: #d0021b !default;
+// ELEMENT COLOR VARIABLES
+$body-background : #fafafa !default;
+$border-color: $gray-400 !default;
+$link-color: $brand-primary !default;
+$font-color: $gray-900 !default;
 
 // Google Fonts Import
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700|Source+Serif+Pro');
 
-// Font weights
-$light: 300;
-$regular: 400;
-$bold: 600;
+// Typography
+$primary-font: "Source Serif Pro", Georgia, serif !default;
+$secondary-font: "Source Serif Pro", Georgia, serif !default;
 
-// Base Font
-$base-font-family: "Source Serif Pro", Georgia, serif !default;
-$base-font-weight: $regular;
-$base-font-size: rem-calc(16px);
-$base-line-height: 1.4;
+// OVERALL THEME VARIABLES
+// Things like how rounded things are, base font size, line height, borders, etc.
+$global-radius: 0px !default;
 
-// Fixed Font
-$fixed-font-family: monospace;
-$fixed-font-size: 85%;
-$fixed-line-height: $base-line-height;
+// FORM VARIABLES
+$input-border: 1px solid $border-color;
+$input-border-focus: 2px solid $brand-primary;
+$input-height: 50px;
+$input-padding: 10px 15px;
+$label-color: $gray-600;
+$label-font-size: rem-calc(12px);
+$label-letter-spacing: 1.75px;
+$label-text-transform: uppercase;
 
-// Headings
-$header-font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$header-font-weight: $bold;
+// BUTTON VARIABLES
+$button-font-size: rem-calc(16px);
+$button-letter-spacing: 0px;
+$button-padding: 15px 30px;
+$button-radius: 4px;
+$button-text-color: $white;
+$button-text-transform: none;
 
-// Misc
-$global-radius: 5px !default;
+// GRID VARIABLES
+$container-width: 1440px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
